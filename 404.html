@@ -12,8 +12,8 @@
   var lang = (parts[0] === 'en' || parts[0] === 'ja') ? parts.shift() + '/' : '';
   var key = parts.join('/');
   var alias = { 'm3-pro':'m3', 'm3-air':'m3', 'm3pro':'m3', 'm3air':'m3', 'gran-tourer':'gt3', 'gran-tourer-iii':'gt3', 'grantourer':'gt3', 'gt':'gt3',
-                'escape-road':'escape', 'escape-road-lace':'escape', 'about':'brand', 'history':'story', 'contact':'showroom', 'dealer':'showroom', 'dealers':'showroom' };
-  var map = { brand:1, m3:1, gt3:1, motion:1, escape:1, story:1, showroom:1 };
+                'm-pro-lace':'mprolace', 'mpro':'mprolace', 'm-pro':'mprolace', 'lace':'mprolace', 'about':'brand', 'history':'story', 'contact':'showroom', 'dealer':'showroom', 'dealers':'showroom' };
+  var map = { brand:1, m3:1, gt3:1, motion:1, mprolace:1, story:1, showroom:1 };
   key = alias[key] || key;
   location.replace(base + lang + (map[key] ? '#' + key : ''));
 </script>

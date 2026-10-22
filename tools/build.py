@@ -28,7 +28,7 @@ GRAVEL = ['227-232', '233-239', '240-246', '247-253', '254-259', '260-266', '267
 
 def size_table():
     h = '<table class="size"><thead><tr><th>EU</th>' + ''.join(f'<th>{s}</th>' for s in EU) + '</tr></thead><tbody>'
-    for name, vals in [('UK', UK), ('US', US), ('로드 (M3 · 모션 · 이스케이프)', ROAD), ('그래블 (그란 투어러 III)', GRAVEL)]:
+    for name, vals in [('UK', UK), ('US', US), ('로드 (M3 · 엠 프로 레이스 · 모션)', ROAD), ('그래블 (그란 투어러 III)', GRAVEL)]:
         h += f'<tr><th>{name}</th>' + ''.join(f'<td>{v}</td>' for v in vals) + '</tr>'
     return h + '</tbody></table>'
 

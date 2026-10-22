@@ -2,13 +2,13 @@
 
 quoc.rubiworkshop.com 원페이지 정적 사이트 (GitHub Pages). parleecycles.co.kr, crustbikes.co.kr, bastioncycles.co.kr, tsubasabicycles.co.kr과 같은 구조입니다.
 
-- `index.html` 한국어 원페이지 (QUOC · M3 PRO · AIR · GRAN TOURER III · MOTION · ESCAPE · STORY · SHOWROOM)
+- `index.html` 한국어 원페이지 (QUOC · M3 PRO · AIR · GRAN TOURER III · MOTION · M PRO LACE · STORY · SHOWROOM)
 - `en/index.html`, `ja/index.html` 영어 · 일본어 페이지 (빌드로 생성, 직접 수정하지 않음)
 - `index.src.html` 편집용 한국어 원본. 사이즈 표는 `{{SIZE_TABLE}}` 자리에 빌드 시 채워집니다 (`tools/build.py` 안의 수치).
 - `i18n/` 번역 사전 (`ko.json` 원문 목록, `en.json` · `ja.json` 원문→번역)
 - `tools/build.py` 한국어 페이지, 번역 페이지, sitemap.xml을 한 번에 생성
-- `404.html` 하위 주소(/m3, /gran-tourer, /motion, /escape, /dealers 등)를 섹션으로 연결
-- `images/` 섹션별 이미지 (`hero`, `brand`, `m3pro`, `m3air`, `gt3`, `motion`, `escape`)
+- `404.html` 하위 주소(/m3, /gran-tourer, /motion, /m-pro-lace, /dealers 등)를 섹션으로 연결
+- `images/` 섹션별 이미지 (`hero`, `brand`, `m3pro`, `m3air`, `gt3`, `motion`, `mprolace`)
 - `.github/image-manifest.txt` + `fetch-images.yml` QUOC 공식 사이트(quoc.cc) CDN 이미지 이전용 워크플로
 
 ## 처음 올릴 때
