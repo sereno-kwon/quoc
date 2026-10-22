@@ -229,6 +229,8 @@ section.sec{padding:clamp(96px,14vw,180px) var(--gutter) 0}
 .cols-2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,64px);align-items:start}
 .cols-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .full{margin-left:calc(var(--gutter)*-1);margin-right:calc(var(--gutter)*-1)}
+.full img,figure.wide img{aspect-ratio:2/1;object-fit:cover}
+.founder figure img{aspect-ratio:4/5;object-fit:cover}
 .gap-l{margin-top:clamp(64px,9vw,120px)}
 .gap-m{margin-top:clamp(40px,5vw,64px)}
 .tagline{text-align:center;padding:clamp(80px,10vw,140px) 0 0}
@@ -282,6 +284,7 @@ blockquote cite small{display:block;font-weight:400;color:var(--muted);font-size
 .row h3{font:700 clamp(24px,2.8vw,36px)/1.2 var(--ko);color:#fff;margin-bottom:22px}
 .row p+p{margin-top:1.2em}
 .row figure{overflow:hidden;cursor:zoom-in}
+.row figure img{aspect-ratio:4/5;object-fit:cover}
 .feat4{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,2.4vw,36px)}
 .feat4 h4{font-size:16px;color:#fff;font-weight:700;padding-bottom:12px;margin-bottom:14px;border-bottom:1px solid var(--line)}
 .feat4 p{font-size:14px}
@@ -414,6 +417,7 @@ footer .copy{margin-top:28px;font-size:12px}
   .hd .tools{gap:0}
 }
 @media (max-width:560px){
+  .full img,figure.wide img{aspect-ratio:4/5}
   .hd{height:64px}.hd .logo,.hd.scrolled .logo{height:14px}
   .hd.scrolled{height:60px}
   .lang a{padding:6px 4px}
@@ -469,13 +473,13 @@ footer .copy{margin-top:28px;font-size:12px}
 <h1 class="sr-only">QUOC Korea | QUOC Cycling Shoes</h1>
 <!-- ===== HERO ===== -->
 <section class="hero" data-sec="" id="top">
-<div class="slide on" style="background-image:url(../images/hero/01.jpg)">
+<div class="slide on" style="background-image:url(../images/brand/10.jpg)">
 <div class="cap"><small>LONDON · SINCE 2009</small><h2>QUOC</h2><p>Joy in everyday riding</p><a class="more" href="#brand">MORE INFO &gt;</a></div>
 </div>
-<div class="slide" style="background-image:url(../images/hero/02.jpg)">
+<div class="slide" style="background-image:url(../images/brand/09r.jpg)">
 <div class="cap"><small>ROAD RACE</small><h2>M3 PRO · M3 AIR</h2><p>A race shoe built with a Tour de France champion</p><a class="more" href="#m3">MORE INFO &gt;</a></div>
 </div>
-<div class="slide" style="background-image:url(../images/hero/03.jpg)">
+<div class="slide" style="background-image:url(../images/gt3/08.jpg)">
 <div class="cap"><small>GRAVEL · ADVENTURE</small><h2>GRAN TOURER III</h2><p>The original gravel shoe, third generation</p><a class="more" href="#gt3">MORE INFO &gt;</a></div>
 </div>
 <div class="slide" style="background-image:url(../images/hero/04.jpg)">
@@ -513,13 +517,13 @@ footer .copy{margin-top:28px;font-size:12px}
 </div>
 </div>
 <div class="pillars gap-l">
-<div class="reveal"><figure><img alt="QUOC design" loading="lazy" src="../images/brand/02.jpg"/></figure><h4><small>DESIGN</small>SHOES THAT DISAPPEAR</h4><p>A good shoe doesn't call attention to itself. It fits, it blends into the ride, and then it's forgotten. That is how QUOC thinks about design.</p></div>
-<div class="reveal"><figure><img alt="QUOC performance" loading="lazy" src="../images/brand/03.jpg"/></figure><h4><small>PERFORMANCE</small>A MODERN APPROACH</h4><p>A carbon sole and wrap closure refined with WorldTour feedback. Race technology, translated for everyday riding.</p></div>
-<div class="reveal"><figure><img alt="QUOC community" loading="lazy" src="../images/brand/04.jpg"/></figure><h4><small>COMMUNITY</small>INSPIRED BY RIDERS</h4><p>From London commutes to gravel bikepacking. QUOC's inspiration always comes from the riders it rides with.</p></div>
-<div class="reveal"><figure><img alt="QUOC detail" loading="lazy" src="../images/brand/05.jpg"/></figure><h4><small>DETAIL</small>THE COLOUR BORDER</h4><p>Introduced with the Gran Tourer in 2018, the colour border became the signature that makes a QUOC recognisable at a glance.</p></div>
+<div class="reveal"><figure><img alt="QUOC design" loading="lazy" src="../images/brand/03r.jpg"/></figure><h4><small>DESIGN</small>SHOES THAT DISAPPEAR</h4><p>A good shoe doesn't call attention to itself. It fits, it blends into the ride, and then it's forgotten. That is how QUOC thinks about design.</p></div>
+<div class="reveal"><figure><img alt="QUOC performance" loading="lazy" src="../images/m3air/07.jpg"/></figure><h4><small>PERFORMANCE</small>A MODERN APPROACH</h4><p>A carbon sole and wrap closure refined with WorldTour feedback. Race technology, translated for everyday riding.</p></div>
+<div class="reveal"><figure><img alt="QUOC community" loading="lazy" src="../images/hero/01.jpg"/></figure><h4><small>COMMUNITY</small>INSPIRED BY RIDERS</h4><p>From London commutes to gravel bikepacking. QUOC's inspiration always comes from the riders it rides with.</p></div>
+<div class="reveal"><figure><img alt="QUOC detail" loading="lazy" src="../images/brand/09l.jpg"/></figure><h4><small>DETAIL</small>THE COLOUR BORDER</h4><p>Introduced with the Gran Tourer in 2018, the colour border became the signature that makes a QUOC recognisable at a glance.</p></div>
 </div>
 <div class="founder gap-l">
-<div class="reveal" data-gallery="founder"><figure><img alt="QUOC founder Quoc Pham" loading="lazy" src="../images/brand/06.jpg"/></figure><figure style="margin-top:12px"><img alt="QUOC studio" loading="lazy" src="../images/brand/07.jpg"/></figure></div>
+<div class="reveal" data-gallery="founder"><figure><img alt="QUOC founder Quoc Pham" loading="lazy" src="../images/brand/02l.jpg"/></figure><figure style="margin-top:12px"><img alt="QUOC studio" loading="lazy" src="../images/brand/03l.jpg"/></figure></div>
 <div class="say reveal">
 <span class="eyebrow">FOUNDER · QUOC PHAM</span>
 <p class="first">“In my late twenties, worn out by the fashion industry, what got me moving again was the ride to work every morning.”</p>
@@ -534,7 +538,7 @@ footer .copy{margin-top:28px;font-size:12px}
 <small>QUOC</small>
 <h3>JOY IN EVERYDAY RIDING.<br/>LONDON BORN, WORN ON EVERY CONTINENT.</h3>
 </div>
-<figure class="gap-l reveal"><img alt="QUOC riding community" loading="lazy" src="../images/brand/08.jpg"/></figure>
+<figure class="gap-l reveal wide"><img alt="QUOC riding community" loading="lazy" src="../images/og.jpg"/></figure>
 <div class="gap-l">
 <div class="rail-hint reveal"><div><span class="eyebrow">THE RANGE</span><p class="sub-head">FIND YOUR QUOC<span>From racing to bikepacking, one pair for the way you ride.</span></p></div></div>
 <div class="terrain t5 reveal">
@@ -825,7 +829,7 @@ footer .copy{margin-top:28px;font-size:12px}
 </div>
 </div>
 </div>
-<figure class="full gap-l reveal"><img alt="QUOC brand story" loading="lazy" src="../images/brand/09.jpg"/></figure>
+<figure class="full gap-l reveal"><img alt="QUOC brand story" loading="lazy" src="../images/brand/04l.jpg"/></figure>
 <div class="wrap gap-l"><div class="rail-hint reveal"><span>2009 ~ 2026</span><span>DRAG →</span></div></div>
 <div class="timeline reveal" data-drag="">
 <article><b>2009</b><h4>QUOC Founded</h4><p>Quoc Pham founds QUOC in Bermondsey, London. The starting point was the idea of a shoe made for toe-cage pedals.</p></article>
@@ -851,7 +855,7 @@ footer .copy{margin-top:28px;font-size:12px}
 <div class="wrap">
 <div class="label reveal">07</div>
 <h2 class="sec-title reveal">SHOWROOM<span>TRY ON · RUBI WORKSHOP</span></h2>
-<figure class="reveal"><img alt="QUOC riding" loading="lazy" src="../images/brand/10.jpg"/></figure>
+<figure class="reveal wide"><img alt="QUOC riding" loading="lazy" src="../images/brand/08r.jpg"/></figure>
 <div class="showinfo gap-m">
 <div class="reveal">
 <h3>Try them on<br/>at Rubi Workshop.</h3>

@@ -56,3 +56,11 @@ https://quoc.cc/cdn/shop/files/QUOC_ESCAPE_ROAD_LACE_WHITE_IMAGE_5_HEEL.jpg?v=17
 https://quoc.cc/cdn/shop/files/QUOC_ESCAPE_ROAD_LACE_WHITE_IMAGE_6_SOLE.jpg?v=1773733822&width=1600 images/escape/06.jpg
 https://quoc.cc/cdn/shop/files/QUOC_ESCAPE_ROAD_LACE_WHITE_IMAGE7_LIFESTYLE.jpg?v=1773733822&width=1600 images/escape/07.jpg
 https://quoc.cc/cdn/shop/files/QUOC_ESCAPE_ROAD_LACE_WHITE_IMAGE8_LIFESTYLE.jpg?v=1773733822&width=1600 images/escape/08.jpg
+https://quoc.cc/cdn/shop/files/3200x1600_QUOC_Founder_1.jpg?v=1744136746&width=3200 images/src/founder1.jpg
+https://quoc.cc/cdn/shop/files/3200x1600_QUOC_Founder_2.jpg?v=1744300335&width=3200 images/src/founder2.jpg
+https://quoc.cc/cdn/shop/files/3200x1600_QUOC_Founder_3.jpg?v=1744300336&width=3200 images/src/founder3.jpg
+https://quoc.cc/cdn/shop/files/3200x1600_QUOC_Founder_4.jpg?v=1744300336&width=3200 images/src/founder4.jpg
+https://quoc.cc/cdn/shop/files/3200x1600_QUOC_Founder_5.jpg?v=1744300336&width=3200 images/src/founder5.jpg
+https://quoc.cc/cdn/shop/files/3200x1600_QUOC_Founder_6.jpg?v=1744300336&width=3200 images/src/founder6.jpg
+https://quoc.cc/cdn/shop/files/2400x1200_Quoc-Pham_Closer-every-year-2.jpg?v=1773188759&width=3200 images/src/closer2.jpg
+https://quoc.cc/cdn/shop/files/2400x1200_Quoc-Pham_Closer-every-year-3.jpg?v=1773188759&width=3200 images/src/closer3.jpg

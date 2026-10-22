@@ -10,14 +10,13 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/01.jpg</image:loc></image:image>
-    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/02.jpg</image:loc></image:image>
-    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/03.jpg</image:loc></image:image>
-    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/04.jpg</image:loc></image:image>
-    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/05.jpg</image:loc></image:image>
-    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/06.jpg</image:loc></image:image>
-    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/07.jpg</image:loc></image:image>
-    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/08.jpg</image:loc></image:image>
-    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/09.jpg</image:loc></image:image>
+    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/02l.jpg</image:loc></image:image>
+    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/03l.jpg</image:loc></image:image>
+    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/03r.jpg</image:loc></image:image>
+    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/04l.jpg</image:loc></image:image>
+    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/08r.jpg</image:loc></image:image>
+    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/09l.jpg</image:loc></image:image>
+    <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/09r.jpg</image:loc></image:image>
     <image:image><image:loc>https://quoc.rubiworkshop.com/images/brand/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://quoc.rubiworkshop.com/images/escape/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://quoc.rubiworkshop.com/images/escape/02.jpg</image:loc></image:image>
@@ -32,8 +31,6 @@
     <image:image><image:loc>https://quoc.rubiworkshop.com/images/gt3/08.jpg</image:loc></image:image>
     <image:image><image:loc>https://quoc.rubiworkshop.com/images/gt3/09.jpg</image:loc></image:image>
     <image:image><image:loc>https://quoc.rubiworkshop.com/images/hero/01.jpg</image:loc></image:image>
-    <image:image><image:loc>https://quoc.rubiworkshop.com/images/hero/02.jpg</image:loc></image:image>
-    <image:image><image:loc>https://quoc.rubiworkshop.com/images/hero/03.jpg</image:loc></image:image>
     <image:image><image:loc>https://quoc.rubiworkshop.com/images/hero/04.jpg</image:loc></image:image>
     <image:image><image:loc>https://quoc.rubiworkshop.com/images/m3air/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://quoc.rubiworkshop.com/images/m3air/02.jpg</image:loc></image:image>
