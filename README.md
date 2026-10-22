@@ -34,4 +34,4 @@ quoc.rubiworkshop.com 원페이지 정적 사이트 (GitHub Pages). parleecycles
 ## 링크
 - 헤더 SHOP, 각 모델의 "루비워크샵에서 보기" 버튼: `https://rubiworkshop.com/quoc`
 - 거래처 문의: 루비서플라이 02-516-8465, 카카오톡 채널 `https://pf.kakao.com/_NFnBj/chat`
-- 푸터 INSTAGRAM: `https://instagram.com/rubi.workshop` (QUOC Korea 계정으로 바꿀 수 있음)
+- 푸터 INSTAGRAM: `https://www.instagram.com/quoc_korea`
