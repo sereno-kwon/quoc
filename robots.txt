@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://quoc.rubiworkshop.com/sitemap.xml
