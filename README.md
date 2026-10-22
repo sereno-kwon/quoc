@@ -32,6 +32,6 @@ quoc.rubiworkshop.com 원페이지 정적 사이트 (GitHub Pages). parleecycles
 빌드에는 `beautifulsoup4`가 필요합니다 (`pip install beautifulsoup4`).
 
 ## 링크
-- 헤더 SHOP, 각 모델의 "루비워크샵에서 보기" 버튼: `https://rubiworkshop.com/` (QUOC 카테고리 주소가 정해지면 `index.src.html`에서 일괄 변경)
+- 헤더 SHOP, 각 모델의 "루비워크샵에서 보기" 버튼: `https://rubiworkshop.com/quoc`
 - 거래처 문의: 루비서플라이 02-516-8465, 카카오톡 채널 `https://pf.kakao.com/_NFnBj/chat`
 - 푸터 INSTAGRAM: `https://instagram.com/rubi.workshop` (QUOC Korea 계정으로 바꿀 수 있음)
