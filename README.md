@@ -2,12 +2,13 @@
 
 quoc.rubiworkshop.com 원페이지 정적 사이트 (GitHub Pages). parleecycles.co.kr, crustbikes.co.kr, bastioncycles.co.kr, tsubasabicycles.co.kr과 같은 구조입니다.
 
-- `index.html` 한국어 원페이지 (QUOC · M3 PRO · AIR · GRAN TOURER III · MOTION · M PRO LACE · STORY · SHOWROOM)
+- `index.html` 한국어 원페이지 (QUOC · RANGE · M3 · GRAN TOURER III · MOTION · M PRO LACE · SIZE · STORY · SHOWROOM)
+- 디자인은 rubi.kr과 같은 체계(2026-10 리디자인): 영문 Pretendard · 한글 에스코어 드림, 웨이트 400, 흑백과 얇은 라인, 각진 버튼, 라이트/다크 자동. 일본어 페이지는 빌드 시 Noto Sans JP로 바뀝니다.
 - `en/index.html`, `ja/index.html` 영어 · 일본어 페이지 (빌드로 생성, 직접 수정하지 않음)
 - `index.src.html` 편집용 한국어 원본. 사이즈 표는 `{{SIZE_TABLE}}` 자리에 빌드 시 채워집니다 (`tools/build.py` 안의 수치).
 - `i18n/` 번역 사전 (`ko.json` 원문 목록, `en.json` · `ja.json` 원문→번역)
 - `tools/build.py` 한국어 페이지, 번역 페이지, sitemap.xml을 한 번에 생성
-- `404.html` 하위 주소(/m3, /gran-tourer, /motion, /m-pro-lace, /dealers 등)를 섹션으로 연결
+- `404.html` 하위 주소(/m3, /gran-tourer, /motion, /m-pro-lace, /size, /dealers 등)를 섹션으로 연결
 - `images/` 섹션별 이미지 (`hero`, `brand`, `m3pro`, `m3air`, `gt3`, `motion`, `mprolace`)
 - `.github/image-manifest.txt` + `fetch-images.yml` QUOC 공식 사이트(quoc.cc) CDN 이미지 이전용 워크플로
 
@@ -16,7 +17,7 @@ quoc.rubiworkshop.com 원페이지 정적 사이트 (GitHub Pages). parleecycles
 2. Settings → Pages → Source: Deploy from a branch, Branch: main / (root).
 3. 도메인 DNS에 `quoc` CNAME 레코드를 `sereno-kwon.github.io`로 추가하고, Pages 설정에서 Custom domain에 `quoc.rubiworkshop.com`을 넣습니다 (CNAME 파일은 이미 들어 있음).
 4. 푸시하면 `fetch-images.yml`이 매니페스트의 이미지를 받아 `images/`에 커밋합니다. Actions → Fetch images from QUOC CDN에서 FAIL이 있으면 해당 줄의 URL을 바꿔 다시 푸시합니다.
-5. 파비콘은 별도로 넣어야 합니다: `images/favicon-48.png`, `images/favicon-96.png`, `images/apple-touch-icon.png`(180px), `images/logo-512.png`. 로고(`images/logo-white.png`)는 CSS에서 흰색으로 반전되므로 검정 로고여도 됩니다.
+5. 파비콘은 별도로 넣어야 합니다: `images/favicon-48.png`, `images/favicon-96.png`, `images/apple-touch-icon.png`(180px), `images/logo-512.png`. 로고(`images/logo-white.png`)는 CSS에서 헤더는 검정, 히어로와 다크모드는 흰색으로 칠해지므로 어떤 색 로고여도 됩니다.
 
 ## 이미지
 매니페스트를 수정해 main에 푸시하면 Actions가 이미지를 받아 `images/`에 커밋합니다.

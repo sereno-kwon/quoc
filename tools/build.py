@@ -117,8 +117,14 @@ def translate(ko_html, lang):
         else:
             a.attrs.pop('class', None); a.attrs.pop('aria-current', None)
     if lang == 'ja':
-        f = soup.find('link', href=re.compile('fonts.googleapis.com/css2'))
-        f['href'] = f['href'].replace('&display=swap', '&family=Noto+Sans+JP:wght@300;400;700&display=swap')
+        # 일본어는 한글 서체(에스코어 드림) 대신 Noto Sans JP로 통일 (영문·숫자는 Pretendard 유지)
+        style = soup.find('style')
+        for tag in BeautifulSoup('<link rel="preconnect" href="https://fonts.googleapis.com">'
+                                 '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+                                 '<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet">'
+                                 '<style>:root{--font:"RubiLatin","Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif}</style>',
+                                 'html.parser').contents[:]:
+            style.insert_after(tag) if tag.name == 'style' else style.insert_before(tag)
 
     out = str(soup)
     # 하위 폴더에서 이미지 경로 보정
