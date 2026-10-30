@@ -1,0 +1,11 @@
+FAIL  https://quoc.cc/products/gran-tourer-ii-sand
+FAIL  https://quoc.cc/products/gran-tourer-ii-pink
+FAIL  https://quoc.cc/products/gran-tourer-ii-black-gum
+FAIL  https://quoc.cc/products/escape-road-white
+FAIL  https://quoc.cc/products/escape-road-black
+FAIL  https://quoc.cc/products/escape-off-road-sand
+FAIL  https://quoc.cc/products/escape-off-road-black
+FAIL  https://quoc.cc/products/mono2-white
+FAIL  https://quoc.cc/products/weekend-all-black
+FAIL  https://quoc.cc/products/weekend-sand
+FAIL  https://quoc.cc/products/lala-slide-amber
