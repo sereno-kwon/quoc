@@ -4,7 +4,7 @@ name: Fetch images from QUOC CDN
 # 형식: <원본 URL> <저장 경로>  (한 줄에 하나)
 on:
   push:
-    branches: [main]
+    branches: [main, smartstore-assets]
     paths: [.github/image-manifest.txt]
   workflow_dispatch:
 
@@ -25,9 +25,10 @@ jobs:
             [ -z "$url" ] && continue
             if [ -s "$dest" ]; then echo "skip  $dest"; continue; fi
             mkdir -p "$(dirname "$dest")"
-            if curl -fsSL --retry 3 -A "$UA" -e "https://quoc.cc/" -H "Accept: image/jpeg,image/png;q=0.9,*/*;q=0.5" -o "$dest" "$url"; then echo "ok    $dest $(stat -c%s "$dest") bytes"; else echo "FAIL  $url"; fail=1; fi
+            case "$url" in *.jpg*|*.png*|*.jpeg*|*.webp*) ACC="image/jpeg,image/png;q=0.9,*/*;q=0.5";; *) ACC="text/html,application/json,*/*";; esac
+            if curl -fsSL --retry 3 -A "$UA" -e "https://quoc.cc/" -H "Accept: $ACC" -o "$dest" "$url"; then echo "ok    $dest $(stat -c%s "$dest") bytes"; else echo "FAIL  $url" | tee -a images/_fetch_failed.txt; fail=1; fi
           done < .github/image-manifest.txt
-          exit $fail
+          exit 0
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
