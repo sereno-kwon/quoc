@@ -14,6 +14,8 @@
   var alias = { 'm3-pro':'m3', 'm3-air':'m3', 'm3pro':'m3', 'm3air':'m3', 'gran-tourer':'gt3', 'gran-tourer-iii':'gt3', 'grantourer':'gt3', 'gt':'gt3',
                 'm-pro-lace':'mprolace', 'mpro':'mprolace', 'm-pro':'mprolace', 'lace':'mprolace', 'about':'brand', 'history':'story', 'contact':'showroom', 'dealer':'dealers', 'sizes':'size', 'size-guide':'size', 'range':'range', 'lineup':'range' };
   var map = { brand:1, range:1, m3:1, gt3:1, motion:1, mprolace:1, size:1, story:1, showroom:1, dealers:1 };
+  // 앰버서더 모집 페이지 (/ambassador/) 별칭
+  if (/^(ambassadors?|ambassador-2027|influencers?|recruit)$/.test(key)) { location.replace(base + 'ambassador/'); }
   key = alias[key] || key;
   location.replace(base + lang + (map[key] ? '#' + key : ''));
 </script>

@@ -143,6 +143,10 @@ def sitemap(html):
         if not p:
             u += ''.join(f'\n    <image:image><image:loc>{SITE}{i}</image:loc></image:image>' for i in imgs)
         urls.append(u + '\n  </url>')
+    # 한국어 단독 하위 페이지 (빌드 대상 아님, 직접 편집)
+    for p, pri, img in [('ambassador/', '0.7', 'images/ambassador/og.jpg')]:
+        urls.append(f'  <url>\n    <loc>{SITE}{p}</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>{pri}</priority>'
+                    f'\n    <image:image><image:loc>{SITE}{img}</image:loc></image:image>\n  </url>')
     x = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
          'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
          + '\n'.join(urls) + '\n</urlset>\n')

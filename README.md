@@ -32,6 +32,11 @@ quoc.rubiworkshop.com 원페이지 정적 사이트 (GitHub Pages). parleecycles
 
 빌드에는 `beautifulsoup4`가 필요합니다 (`pip install beautifulsoup4`).
 
+## 앰버서더 모집 페이지
+- `ambassador/index.html` 2027 QUOC 앰버서더 모집 (quoc.rubiworkshop.com/ambassador/). 한국어 단독 페이지라 빌드 대상이 아니며 직접 편집합니다. 내용은 루비컴퍼니 인플루언서(앰버서더) 계약서 기준입니다.
+- 지원서는 `data-endpoint`가 비어 있으면 help@rubi.kr 메일로 열리고, `tools/ambassador-apply.gs`를 Apps Script 웹앱으로 배포해 주소를 넣으면 구글 시트에 쌓이고 알림 메일이 옵니다.
+- 사이트맵 항목은 `tools/build.py`가 함께 씁니다. /ambassadors, /influencer 같은 주소는 `404.html`이 이 페이지로 보냅니다.
+
 ## 링크
 - 헤더 SHOP, 각 모델의 "루비워크샵에서 보기" 버튼: `https://rubiworkshop.com/quoc`
 - 거래처 문의: 루비서플라이 02-516-8465, 카카오톡 채널 `https://pf.kakao.com/_NFnBj/chat`
