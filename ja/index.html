@@ -336,9 +336,10 @@ h2,.h2{font-size:28px;line-height:32px;letter-spacing:var(--ls-title);margin:0;t
 @media (max-width:760px){.duo{gap:8px}}
 
 /* 카드 그리드 (rubi.kr 채널 문법) */
-.cols{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--fg)}
-.cols.c3{grid-template-columns:repeat(3,1fr)}
-.cols.c2{grid-template-columns:repeat(2,1fr)}
+/* 첫 칸은 왼쪽 여백이 없으므로 칸 너비를 보정해 모든 칸의 내용(이미지) 폭을 같게 맞춥니다 */
+.cols{display:grid;grid-template-columns:calc(25% - 21px) repeat(3,calc(25% + 7px));border-top:1px solid var(--fg)}
+.cols.c3{grid-template-columns:calc(33.333% - 18.667px) repeat(2,calc(33.333% + 9.333px))}
+.cols.c2{grid-template-columns:calc(50% - 14px) calc(50% + 14px)}
 .cell{display:flex;flex-direction:column;padding:28px 28px 32px 0;border-bottom:1px solid var(--line)}
 .cell+.cell{padding-left:28px;border-left:1px solid var(--line)}
 .c3 .cell:nth-child(3n+1){padding-left:0;border-left:0}
@@ -356,13 +357,13 @@ h2,.h2{font-size:28px;line-height:32px;letter-spacing:var(--ls-title);margin:0;t
 .checks li:last-child{border-bottom:0}
 .checks li::before{content:"";position:absolute;left:2px;top:21px;width:8px;height:1px;background:var(--fg)}
 @media (max-width:1080px){
-  .cols{grid-template-columns:1fr 1fr}
-  .cols .cell:nth-child(odd){padding-left:0;border-left:0}
-  .cols .cell:nth-child(even){padding-left:28px;border-left:1px solid var(--line)}
+  .cols{grid-template-columns:calc(50% - 14px) calc(50% + 14px)}
+  .cols:not(.c3) .cell:nth-child(odd){padding-left:0;border-left:0}
+  .cols:not(.c3) .cell:nth-child(even){padding-left:28px;border-left:1px solid var(--line)}
 }
 @media (max-width:760px){
   .cols,.cols.c3,.cols.c2{grid-template-columns:1fr}
-  .cols .cell,.cols .cell:nth-child(even){padding:24px 0 28px;border-left:0}
+  .cols .cell,.cols:not(.c3) .cell:nth-child(even){padding:24px 0 28px;border-left:0}
   .cell .idx{margin-bottom:16px}
 }
 
