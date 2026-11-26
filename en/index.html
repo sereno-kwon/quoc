@@ -16,7 +16,7 @@
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
 <title>QUOC Korea | QUOC Cycling Shoes</title>
 <meta content="QUOC is a cycling shoe brand founded in London in 2009 by Quoc Pham. Discover the M3 Pro and M3 Air road race shoes, the Gran Tourer III gravel shoe, Motion and M Pro Lace at Rubi Workshop in Seoul." name="description"/>
-<meta content="QUOC,QUOC shoes,QUOC Korea,cycling shoes,road cycling shoes,gravel shoes,M3 Pro,M3 Air,Gran Tourer III,Gran Tourer,Motion,M Pro Lace,Rubi Workshop" name="keywords"/>
+<meta content="QUOC,QUOC shoes,QUOC Korea,cycling shoes,road cycling shoes,gravel shoes,M3 Pro,M3 Air,Gran Tourer III,Gran Tourer,Motion,M Pro Lace,QUOC shoe care,QUOC warranty,cycling shoe care,cleat torque,Rubi Workshop" name="keywords"/>
 <meta content="#ffffff" name="theme-color"/>
 <link href="https://quoc.rubiworkshop.com/en/" rel="canonical"/>
 <link href="https://quoc.rubiworkshop.com/" hreflang="ko" rel="alternate"/>
@@ -215,7 +215,7 @@ header.site.scrolled,body.menu-open header.site{border-bottom-color:var(--line)}
 .icon-btn svg{width:20px;height:20px}
 .burger{display:none}
 .drawer{display:none}
-@media (max-width:1080px){
+@media (max-width:1200px){
   .menu,.tools .lang{display:none}
   .burger{display:grid}
   .bar{gap:16px}
@@ -259,7 +259,7 @@ body.menu-open .ico-close{display:block}
 @media (min-width:1601px){.rh-media.fit-stage img{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%,#000 82%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 22%,#000 82%,transparent 100%)}}
 .rh-shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(100deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.2) 34%,rgba(0,0,0,0) 55%),linear-gradient(0deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 26%)}
 .rh-copy{position:absolute;z-index:2;top:clamp(32px,7vw,72px);left:var(--rh-gutter);max-width:480px;padding-right:20px}
-.rh-eyebrow{font-size:12px;line-height:16px;letter-spacing:.08em;text-transform:uppercase;color:var(--rh-fg-sub);margin:0 0 14px}
+.rh-eyebrow{font-size:12px;line-height:16px;letter-spacing:.08em;color:var(--rh-fg-sub);margin:0 0 14px}
 .rh-title,.rh-sub{font-size:28px;line-height:32px;font-weight:400;letter-spacing:-1px;margin:0}
 .rh-sub{color:var(--rh-fg-sub)}
 .rh-sub:empty{display:none}
@@ -303,7 +303,7 @@ body.menu-open .ico-close{display:block}
 }
 @media (prefers-reduced-motion:reduce){.rh-media img{transition:none;transform:none}}
 
-.eyebrow{font-size:12px;line-height:16px;letter-spacing:var(--ls-label);text-transform:uppercase;color:rgba(255,255,255,.6);margin:0 0 14px}
+.eyebrow{font-size:12px;line-height:16px;letter-spacing:var(--ls-label);color:rgba(255,255,255,.6);margin:0 0 14px}
 
 /* ---------- 퀵링크 ---------- */
 .quick{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}
@@ -317,7 +317,7 @@ body.menu-open .ico-close{display:block}
 /* ---------- 섹션 공통 ---------- */
 .sec{padding-block:clamp(64px,9vw,128px)}
 .sec+.sec{padding-top:0}
-.kicker{font-size:12px;line-height:16px;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.kicker{font-size:12px;line-height:16px;letter-spacing:var(--ls-label);color:var(--muted);margin:0 0 14px}
 h2,.h2{font-size:28px;line-height:32px;letter-spacing:var(--ls-title);margin:0;text-wrap:balance}
 .lead{font-size:15px;line-height:22px;color:var(--muted);max-width:56ch;margin:12px 0 0}
 .sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
@@ -353,13 +353,19 @@ h2,.h2{font-size:28px;line-height:32px;letter-spacing:var(--ls-title);margin:0;t
 .cell{display:flex;flex-direction:column;padding:28px 28px 32px 0;border-bottom:1px solid var(--line)}
 .cell+.cell{padding-left:28px;border-left:1px solid var(--line)}
 .c3 .cell:nth-child(3n+1){padding-left:0;border-left:0}
-.cell .idx{font-size:12px;line-height:16px;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--muted);margin-bottom:40px;font-variant-numeric:tabular-nums}
+.cell .idx{font-size:12px;line-height:16px;letter-spacing:var(--ls-label);color:var(--muted);margin-bottom:40px;font-variant-numeric:tabular-nums}
 .cell figure{aspect-ratio:4/5;overflow:hidden;background:var(--surface);margin-bottom:24px}
 .cell figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
 .cell:hover figure img{transform:scale(1.03)}
 .cell h3{font-size:18px;line-height:24px;letter-spacing:-.5px;margin:0 0 8px}
 .cell h3 small{display:block;font-size:12px;line-height:16px;letter-spacing:var(--ls-label);color:var(--muted);margin-bottom:10px}
 .cell p{color:var(--muted);font-size:14px;line-height:21px}
+/* 슈 케어, 워런티 */
+.cols.care .cell h3{margin-bottom:12px}
+.checks{list-style:none;margin:16px 0 0;padding:0;border-top:1px solid var(--line)}
+.checks li{position:relative;padding:12px 0 12px 20px;border-bottom:1px solid var(--line);font-size:14px;line-height:21px;color:var(--muted)}
+.checks li:last-child{border-bottom:0}
+.checks li::before{content:"";position:absolute;left:2px;top:21px;width:8px;height:1px;background:var(--fg)}
 @media (max-width:1080px){
   .cols{grid-template-columns:1fr 1fr}
   .cols .cell:nth-child(odd){padding-left:0;border-left:0}
@@ -413,7 +419,7 @@ h2,.h2{font-size:28px;line-height:32px;letter-spacing:var(--ls-title);margin:0;t
 .range a:hover{background:var(--surface)}
 .range .idx{font-size:12px;letter-spacing:var(--ls-label);color:var(--muted);font-variant-numeric:tabular-nums;padding-left:8px}
 .range b{display:block;font-size:18px;line-height:24px;letter-spacing:-.5px}
-.range small{display:block;font-size:12px;line-height:16px;letter-spacing:var(--ls-label);color:var(--muted);margin-top:6px;text-transform:uppercase}
+.range small{display:block;font-size:12px;line-height:16px;letter-spacing:var(--ls-label);color:var(--muted);margin-top:6px}
 .range p{color:var(--muted);font-size:14px;line-height:21px}
 .range dl{font-size:13px;line-height:18px;color:var(--muted);display:grid;grid-template-columns:auto auto;justify-content:start;gap:2px 12px}
 .range dd{color:var(--fg);font-variant-numeric:tabular-nums}
@@ -492,7 +498,7 @@ table.size tbody tr:hover{background:var(--surface)}
 /* 푸터 */
 footer{background:var(--surface);padding-block:64px 40px;font-size:14px;line-height:20px}
 .fcols{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;padding-bottom:48px;border-bottom:1px solid var(--line)}
-.fcols h4{font-size:12px;line-height:16px;letter-spacing:var(--ls-label);text-transform:uppercase;margin:0 0 16px}
+.fcols h4{font-size:12px;line-height:16px;letter-spacing:var(--ls-label);margin:0 0 16px}
 .fcols ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
 .fcols a{color:var(--muted);transition:color .2s}
 .fcols a:hover{color:var(--fg)}
@@ -544,6 +550,8 @@ footer{background:var(--surface);padding-block:64px 40px;font-size:14px;line-hei
 <li><a href="#mprolace">M Pro Lace</a></li>
 <li><a href="#size">Size</a></li>
 <li><a href="#story">Story</a></li>
+<li><a href="#care">Care</a></li>
+<li><a href="#warranty">Warranty</a></li>
 <li><a href="#showroom">Showroom</a></li>
 </ul>
 <div class="tools">
@@ -567,7 +575,9 @@ footer{background:var(--surface);padding-block:64px 40px;font-size:14px;line-hei
 <li><a href="#mprolace">M Pro Lace<small>05</small></a></li>
 <li><a href="#size">Size Guide<small>06</small></a></li>
 <li><a href="#story">Story<small>07</small></a></li>
-<li><a href="#showroom">Showroom<small>08</small></a></li>
+<li><a href="#care">Shoe Care<small>08</small></a></li>
+<li><a href="#warranty">Warranty<small>09</small></a></li>
+<li><a href="#showroom">Showroom<small>10</small></a></li>
 </ul>
 <nav aria-label="Language" class="lang">
 <a href="../" hreflang="ko" lang="ko">KO</a>
@@ -1027,12 +1037,114 @@ footer{background:var(--surface);padding-block:64px 40px;font-size:14px;line-hei
 </ul>
 </div>
 </section>
-<!-- ===== 08 SHOWROOM ===== -->
+<!-- ===== 08 CARE ===== -->
+<section class="sec" data-sec="" id="care">
+<div class="container story">
+<div class="reveal"><p class="num">08</p><p class="kicker">Shoe Care</p><p class="model">Care Guide<span>After every ride</span></p></div>
+<div class="copy reveal">
+<h2>The secret to shoes that last<br/>begins after<br/>the ride ends.</h2>
+<p>QUOC shoes are built for performance, durability and comfort. A little care after every ride keeps them performing like new for longer. Here is how QUOC recommends looking after them, from cleaning and drying to checking parts and fitting cleats.</p>
+</div>
+</div>
+<div class="container mt">
+<p class="kicker reveal">After the Ride</p>
+<div class="cols care reveal">
+<article class="cell"><span class="idx">01 · Cleaning</span><h3>Cleaning</h3><p>After each ride, remove loose dirt with a soft brush or cloth. Wash gently with lukewarm water and mild soap, then wipe away any residue. Never machine wash, as it damages the materials and adhesives.</p></article>
+<article class="cell"><span class="idx">02 · Drying</span><h3>Drying</h3><p>Stuff the shoes with newspaper or paper towels to absorb moisture and hold their shape. Let them air dry fully at room temperature in a well-ventilated space. Radiators, heaters or open flames can warp or crack the materials.</p></article>
+<article class="cell"><span class="idx">03 · Moisture</span><h3>Moisture</h3><p>Moisture is the most common cause of premature wear. Riding repeatedly in damp shoes softens the materials inside the heel and wears them out faster. Let the shoes dry fully before your next ride, and remove the insoles now and then to improve airflow.</p></article>
+<article class="cell"><span class="idx">04 · Tyre Marks</span><h3>Tyre marks</h3><p>White shoes can pick up dark marks from tyre contact in tight turns. The rubber acts like an abrasive, and it is common in cycling. Remove marks with a melamine sponge, and for tougher scuffs use a little mild cream cleaner, then wipe with a damp cloth and leave to air dry.</p></article>
+</div>
+</div>
+<div class="container mt">
+<p class="kicker reveal">Parts</p>
+<div class="cols care reveal">
+<article class="cell"><span class="idx">05 · Dial</span><h3>Dial</h3><p>Turn forward to tighten, one click back to loosen. Tighten gradually rather than forcing the dial under tension. If it becomes stiff, rinse it with fresh water while turning to clear dirt, and let it dry fully before riding. QUOC dials come with a lifetime warranty.</p></article>
+<article class="cell"><span class="idx">06 · Heel Pad</span><h3>Heel pad</h3><p>Heel pads protect the sole and add grip when walking. They can loosen with use, so lift the insole and tighten the screws with a small screwdriver. Overtightening can strip the threads. Replace a worn or missing pad straight away so the carbon sole does not wear.</p></article>
+<article class="cell"><span class="idx">07 · Carbon Sole</span><h3>Carbon sole</h3><p>Carbon soles are made extremely stiff for efficient power transfer, which also means excessive force or impact can crack them. Limit walking in your shoes, store them where they will not be compressed, and always fit cleats at the correct torque.</p></article>
+<article class="cell"><span class="idx">08 · Spikes</span><h3>Spikes</h3><p>Spikes are designed for muddy off-road terrain only. On hard surfaces such as rock, gravel or concrete, or for everyday walking, they wear quickly and may loosen or detach. Fit them only when conditions call for extra grip and remove them when not needed.</p></article>
+</div>
+</div>
+<div class="container mt" id="cleats">
+<div class="spec">
+<div class="reveal">
+<p class="kicker">Cleats</p>
+<h3 class="h2">Cleat compatibility and fitting</h3>
+<p class="lead">Choosing the right cleat for your riding and installing it correctly matters for both performance and durability.</p>
+</div>
+<dl class="reveal">
+<dt>Road shoes</dt><dd>3-bolt road cleats (M3 Pro · M3 Air · Motion · M Pro Lace)<br/>Shimano SPD-SL · Look Keo · Time Xpresso</dd>
+<dt>Off-road shoes</dt><dd>2-bolt cleats (Gran Tourer III)<br/>Shimano SPD · Crank Brothers Eggbeater · Time ATAC</dd>
+<dt>Bolt torque</dt><dd>4–6 Nm. Follow the torque guidance from your cleat or pedal brand and tighten the bolts evenly.</dd>
+<dt>Caution</dt><dd>Overtightening can damage the threads inside the sole so bolts spin or will not tighten, and it also stresses the carbon sole.</dd>
+</dl>
+</div>
+</div>
+</section>
+<!-- ===== 09 WARRANTY ===== -->
+<section class="sec" data-sec="" id="warranty">
+<div class="container story">
+<div class="reveal"><p class="num">09</p><p class="kicker">Warranty</p><p class="model">Warranty Guide<span>Materials · Workmanship</span></p></div>
+<div class="copy reveal">
+<h2>Manufacturing defects<br/>are on QUOC.</h2>
+<p>The QUOC warranty covers manufacturing defects and faults in materials or workmanship. Each claim is carefully reviewed by the QUOC team based on the photos and information you provide.</p>
+<p>Cycling shoes face constant pedal contact, repeated force and varied riding conditions. Signs of use that develop over time are natural and are not considered faults.</p>
+</div>
+</div>
+<div class="container mt">
+<div class="cols c2 reveal">
+<div class="cell"><span class="idx">Covered</span><h3>Covered</h3>
+<ul class="checks">
+<li>Manufacturing defects in materials or workmanship</li>
+<li>Dial system faults (lifetime warranty, replacement)</li>
+<li>Heel pads (replaceable, covered under warranty)</li>
+</ul>
+</div>
+<div class="cell"><span class="idx">Not Covered</span><h3>Not covered</h3>
+<ul class="checks">
+<li>Normal wear and tear and cosmetic changes</li>
+<li>Damage from improper use or care</li>
+<li>Damage from impact, pressure or incorrect setup</li>
+<li>Moisture damage from incorrect drying</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container mt" id="warranty-detail">
+<div class="spec">
+<div class="reveal">
+<p class="kicker">Case by Case</p>
+<h3 class="h2">Part by part</h3>
+<p class="lead">Common cases, part by part. The final decision is made after reviewing the photos and description you send.</p>
+</div>
+<dl class="reveal">
+<dt>Dial</dt><dd>Covered by a lifetime warranty and replaced if a fault occurs.</dd>
+<dt>Heel pad</dt><dd>Replaceable and covered under warranty. Contact us as soon as a pad loosens or wears. Riding without a heel pad wears the carbon sole, which can affect performance and prevent the pad from being replaced properly later.</dd>
+<dt>Carbon sole</dt><dd>A cracked carbon sole is generally not repairable, and the shoe will need to be replaced following assessment. Common causes are frequent walking, compression in storage, overtightened cleats and impact with hard surfaces.</dd>
+<dt>Cleat threads</dt><dd>Thread damage from overtightened bolts is not a manufacturing fault, but we will always try to help with replacement parts where possible.</dd>
+<dt>Heel lining</dt><dd>Wear to the heel lining is usually linked to moisture and drying, so it is not covered under warranty. Our team will still try to help find a resolution.</dd>
+<dt>Spikes</dt><dd>Like football boot studs, spikes are a terrain-specific component and do not typically fall under warranty.</dd>
+<dt>Cosmetic wear</dt><dd>Scuffs and marks from clipping in and out, tyre contact or walking on rough surfaces are signs of use that do not affect performance and are not considered faults.</dd>
+</dl>
+</div>
+</div>
+<div class="container story mt">
+<div class="reveal"><p class="kicker">Support</p></div>
+<div class="copy reveal">
+<h2>Not sure of the cause?<br/>Send us photos.</h2>
+<p>If you have an issue and are unsure of the cause, send us photos that clearly show the problem along with a description. Rubi Workshop will review it with the QUOC team and recommend the most appropriate solution.</p>
+<div class="tiles" style="margin-top:28px">
+<a class="tile" data-ga="warranty" href="mailto:help@rubi.kr?subject=QUOC%20Warranty"><div><b>help@rubi.kr</b><span>Email with photos</span></div><svg><use href="#i-arrow"></use></svg></a>
+<a class="tile" data-ga="warranty" href="tel:15515320"><div><b>1551-5320</b><span>Rubi Workshop</span></div><svg><use href="#i-arrow"></use></svg></a>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== 10 SHOWROOM ===== -->
 <section class="sec" data-sec="" id="showroom">
 <div class="container"><div class="duo reveal" data-gallery="showroom"><figure><img alt="QUOC detail" loading="lazy" src="../images/brand/08l.jpg"/></figure><figure><img alt="QUOC riding" loading="lazy" src="../images/brand/08r.jpg"/></figure></div></div>
 <div class="container contact mt">
 <div class="reveal">
-<p class="kicker">08 · Showroom</p>
+<p class="kicker">10 · Showroom</p>
 <h2>Try them on<br/>at Rubi Workshop.</h2>
 <p class="lead">Shoes have to be tried on. At Rubi Workshop you can try every QUOC model, and we'll help you find the model and size that fit your riding and your feet.</p>
 <div class="btns" style="margin-top:28px"><a class="btn solid" href="https://rubiworkshop.com/quoc" rel="noopener" target="_blank">Visit Rubi Workshop →</a><a class="btn ghost" href="https://map.naver.com/p/search/%EB%A3%A8%EB%B9%84%EC%9B%8C%ED%81%AC%EC%83%B5" rel="noopener" target="_blank">View on map</a></div>
@@ -1075,6 +1187,8 @@ footer{background:var(--surface);padding-block:64px 40px;font-size:14px;line-hei
 <li><a href="/ambassador/">Ambassador 2027</a></li>
 </ul></div>
 <div><h4>Support</h4><ul>
+<li><a href="#care">Shoe Care</a></li>
+<li><a href="#warranty">Warranty</a></li>
 <li><a href="https://rubiworkshop.com/quoc" rel="noopener" target="_blank">Rubi Workshop</a></li>
 <li><a href="https://pf.kakao.com/_NFnBj/chat" rel="noopener" target="_blank">Rubi Supply · Dealers</a></li>
 <li><a href="tel:15515320">1551-5320</a></li>
@@ -1109,7 +1223,7 @@ footer{background:var(--surface);padding-block:64px 40px;font-size:14px;line-hei
   const setMenu = open => { body.classList.toggle('menu-open', open); burger.setAttribute('aria-expanded', open); };
   burger.onclick = () => setMenu(!body.classList.contains('menu-open'));
   document.querySelectorAll('#drawer a[href^="#"]').forEach(a => a.addEventListener('click', () => setMenu(false)));
-  addEventListener('resize', () => { if (innerWidth > 1080) setMenu(false); });
+  addEventListener('resize', () => { if (innerWidth > 1200) setMenu(false); });
 
   /* 히어로 슬라이드: 진행 바, 이전·다음, 일시정지, 스와이프 */
   const rh = document.getElementById('top'), rs = [...rh.querySelectorAll('.rh-slide')], dots = [...rh.querySelectorAll('.rh-dot')];
