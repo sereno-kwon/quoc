@@ -2,14 +2,14 @@
 
 quoc.rubiworkshop.com 원페이지 정적 사이트 (GitHub Pages). parleecycles.co.kr, crustbikes.co.kr, bastioncycles.co.kr, tsubasabicycles.co.kr과 같은 구조입니다.
 
-- `index.html` 한국어 원페이지 (QUOC · RANGE · M3 · GRAN TOURER III · MOTION · M PRO LACE · SIZE · STORY · SHOWROOM)
+- `index.html` 한국어 원페이지 (QUOC · RANGE · M3 · GRAN TOURER III · MOTION · QUOC RIDE SEOUL · SIZE · STORY · SHOWROOM)
 - 디자인은 rubi.kr과 같은 체계(2026-10 리디자인): 영문 Pretendard · 한글 에스코어 드림, 웨이트 400, 흑백과 얇은 라인, 각진 버튼, 라이트/다크 자동. 일본어 페이지는 빌드 시 Noto Sans JP로 바뀝니다.
 - `en/index.html`, `ja/index.html` 영어 · 일본어 페이지 (빌드로 생성, 직접 수정하지 않음)
 - `index.src.html` 편집용 한국어 원본. 사이즈 표는 `{{SIZE_TABLE}}` 자리에 빌드 시 채워집니다 (`tools/build.py` 안의 수치).
 - `i18n/` 번역 사전 (`ko.json` 원문 목록, `en.json` · `ja.json` 원문→번역)
 - `tools/build.py` 한국어 페이지, 번역 페이지, sitemap.xml을 한 번에 생성
-- `404.html` 하위 주소(/m3, /gran-tourer, /motion, /m-pro-lace, /size, /dealers 등)를 섹션으로 연결
-- `images/` 섹션별 이미지 (`hero`, `brand`, `m3pro`, `m3air`, `gt3`, `motion`, `mprolace`)
+- `404.html` 하위 주소(/m3, /gran-tourer, /motion, /ride-seoul, /size, /dealers 등)를 섹션으로 연결. 예전 /m-pro-lace 주소는 라인업(#range)으로 보냅니다
+- `images/` 섹션별 이미지 (`hero`, `brand`, `m3pro`, `m3air`, `gt3`, `motion`, `ride`). `ride`는 루비워크샵 저널의 QUOC 라이드 서울 사진입니다
 - `.github/image-manifest.txt` + `fetch-images.yml` QUOC 공식 사이트(quoc.cc) CDN 이미지 이전용 워크플로
 
 ## 처음 올릴 때

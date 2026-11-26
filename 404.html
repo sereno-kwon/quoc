@@ -12,9 +12,9 @@
   var lang = (parts[0] === 'en' || parts[0] === 'ja') ? parts.shift() + '/' : '';
   var key = parts.join('/');
   var alias = { 'm3-pro':'m3', 'm3-air':'m3', 'm3pro':'m3', 'm3air':'m3', 'gran-tourer':'gt3', 'gran-tourer-iii':'gt3', 'grantourer':'gt3', 'gt':'gt3',
-                'm-pro-lace':'mprolace', 'mpro':'mprolace', 'm-pro':'mprolace', 'lace':'mprolace', 'about':'brand', 'history':'story', 'contact':'showroom', 'dealer':'dealers', 'sizes':'size', 'size-guide':'size', 'range':'range', 'lineup':'range',
+                'm-pro-lace':'range', 'mpro':'range', 'm-pro':'range', 'lace':'range', 'ride-seoul':'ride', 'quoc-ride':'ride', 'quoc-ride-seoul':'ride', 'community':'ride', 'community-ride':'ride', 'rides':'ride', 'about':'brand', 'history':'story', 'contact':'showroom', 'dealer':'dealers', 'sizes':'size', 'size-guide':'size', 'range':'range', 'lineup':'range',
                 'shoe-care':'care', 'care-guide':'care', 'cleaning':'care', 'cleat':'cleats', 'guarantee':'warranty', 'warranty-guide':'warranty', 'as':'warranty' };
-  var map = { brand:1, range:1, m3:1, gt3:1, motion:1, mprolace:1, size:1, story:1, care:1, cleats:1, warranty:1, showroom:1, dealers:1 };
+  var map = { brand:1, range:1, m3:1, gt3:1, motion:1, ride:1, 'ride-route':1, size:1, story:1, care:1, cleats:1, warranty:1, showroom:1, dealers:1 };
   // 한국어 단독 하위 페이지 별칭: 앰버서더 모집(/ambassador/), 라이더 서베이(/survey/)
   var page = /^(ambassadors?|ambassador-2027|influencers?|recruit)$/.test(key) ? 'ambassador/'
            : /^(surveys?|survey-2026|my-?quoc(-2026)?|review|rider-survey)$/.test(key) ? 'survey/' : '';
