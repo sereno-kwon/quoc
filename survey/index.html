@@ -371,13 +371,11 @@ input[type=url]{width:100%;background:transparent;border:0;border-bottom:1px sol
 /* 피드 미리보기 (4:5) */
 .pv{position:relative;aspect-ratio:4/5;width:100%;max-width:300px;overflow:hidden;background:#0e0d0b;color:#fff;margin-top:28px}
 .pv>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .3s}
-.pv::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.15) 48%,rgba(0,0,0,0) 62%),linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 20%)}
+.pv::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 28%),linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 20%)}
 .pv .top{position:absolute;z-index:1;left:16px;right:16px;top:16px;display:flex;justify-content:space-between;align-items:center;font-size:11px;line-height:14px;color:rgba(255,255,255,.75);font-variant-numeric:tabular-nums}
 .pv .top img{height:10px;width:auto;max-width:none;filter:brightness(0) invert(1)}
 .pv figcaption{position:absolute;z-index:1;left:16px;right:16px;bottom:16px}
-.pv .eb{display:block;font-size:11px;line-height:14px;letter-spacing:var(--ls-label);color:rgba(255,255,255,.7)}
-.pv .qt{display:block;font-size:18px;line-height:24px;letter-spacing:-.5px;margin:8px 0 12px;overflow-wrap:anywhere}
-.pv .by{display:block;font-size:12px;line-height:16px;color:rgba(255,255,255,.8);border-top:1px solid rgba(255,255,255,.35);padding-top:10px}
+.pv .by{display:block;font-size:12px;line-height:16px;color:rgba(255,255,255,.85)}
 .pv-note{margin-top:10px;max-width:300px}
 @media (max-width:860px){.pv{max-width:260px}}
 /* 모바일 2단 진행 순서 칸 사이 여백 (텍스트가 붙지 않도록) */
@@ -508,13 +506,11 @@ input[type=url]{width:100%;background:transparent;border:0;border-bottom:1px sol
     <div class="side reveal">
       <p class="kicker">03 · Survey</p>
       <h2>설문</h2>
-      <p class="lead">설문에 적는 한 줄 소감과 대표 사진이 아래 피드 미리보기에 바로 반영됩니다.</p>
+      <p class="lead">올리신 대표 사진과 계정이 아래 피드 미리보기에 바로 반영됩니다.</p>
       <figure class="pv" aria-hidden="true">
         <img id="pvImg" src="../images/hero/03.jpg" alt="" width="1600" height="1800">
         <div class="top"><img src="../images/logo-white.png" alt="" width="1200" height="300"><span>2026</span></div>
         <figcaption>
-          <span class="eb">My QUOC 2026</span>
-          <span class="qt" id="pvQuote">한 줄 소감이 이 자리에 들어갑니다</span>
           <span class="by"><span id="pvBy">@your_account</span> · <span id="pvModel">QUOC</span></span>
         </figcaption>
       </figure>
@@ -720,12 +716,11 @@ input[type=url]{width:100%;background:transparent;border:0;border-bottom:1px sol
   $('#f-model-etc').addEventListener('change', e => { document.getElementById('w-model-etc').hidden = !e.target.checked; });
 
   /* 피드 미리보기 */
-  const pvImg = document.getElementById('pvImg'), pvQuote = document.getElementById('pvQuote'), pvBy = document.getElementById('pvBy'), pvModel = document.getElementById('pvModel');
+  const pvImg = document.getElementById('pvImg'), pvBy = document.getElementById('pvBy'), pvModel = document.getElementById('pvModel');
   const DEFAULT_IMG = pvImg.getAttribute('src');
   const handle = () => { const v = $('#f-ig').value.trim().replace(/^@+/, '').replace(/^https?:\/\/(www\.)?instagram\.com\//i, '').replace(/[/?].*$/, ''); return v ? '@' + v : ''; };
   const updatePreview = () => {
     const line = $('#f-line').value.trim();
-    pvQuote.textContent = line ? '“' + line + '”' : '한 줄 소감이 이 자리에 들어갑니다';
     const mode = $('#f-credit').value, nick = $('#f-nick').value.trim(), name = $('#f-name').value.trim();
     pvBy.textContent = mode === '활동명' ? (nick || '활동명') : mode === '이름' ? (name || '이름') : mode === '표기하지 않음' ? 'QUOC Rider' : (handle() || '@your_account');
     const models = [...form.querySelectorAll('[name="모델"]:checked')].map(c => c.value === '기타' ? ($('#f-model-etc-t').value.trim() || '') : c.value).filter(Boolean);
