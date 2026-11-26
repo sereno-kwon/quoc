@@ -37,6 +37,14 @@ quoc.rubiworkshop.com 원페이지 정적 사이트 (GitHub Pages). parleecycles
 - 지원서는 `data-endpoint`가 비어 있으면 help@rubi.kr 메일로 열리고, `tools/ambassador-apply.gs`를 Apps Script 웹앱으로 배포해 주소를 넣으면 구글 시트에 쌓이고 알림 메일이 옵니다.
 - 사이트맵 항목은 `tools/build.py`가 함께 씁니다. /ambassadors, /influencer 같은 주소는 `404.html`이 이 페이지로 보냅니다.
 
+## 라이더 서베이 페이지 (My QUOC 2026)
+- `survey/index.html` 2026 QUOC 라이더 서베이 (quoc.rubiworkshop.com/survey/). 올해 QUOC를 신은 인플루언서에게 소감과 사진을 받아 @quoc_korea 피드 시리즈 My QUOC 2026으로 소개하기 위한 설문입니다. 한국어 단독 페이지라 빌드 대상이 아니며 직접 편집합니다.
+- 초대한 분들께 링크로 보내는 설문이라 `noindex`이고 사이트맵에 넣지 않았습니다. 공개하려면 robots 메타를 `index,follow`로 바꾸고 `tools/build.py`의 하위 페이지 목록에 `('survey/', '0.6', 'images/survey/og.jpg')`를 추가합니다.
+- 접수는 `tools/survey-submit.gs`를 Apps Script 웹앱으로 배포해 주소를 `<form id="surveyForm" data-endpoint="">`에 넣으면, 사진은 구글 드라이브 `My QUOC 2026 서베이` 폴더에 응답자별로, 답변은 시트 `2026 서베이`에 쌓이고 help@rubi.kr로 알림 메일이 옵니다. 주소가 비어 있으면 메일 앱이 열리고 사진은 직접 첨부하도록 안내합니다.
+- 사진은 8MB 이하 JPG · PNG · WebP는 원본 그대로, 그보다 크거나 HEIC면 브라우저에서 긴 변 3,000px JPG로 줄여 한 장씩 보냅니다 (최대 10장, 장당 30MB).
+- 마감일(2026. 12. 13)은 히어로, About, Guide, 설문 옆 안내, 메타 설명에 들어 있습니다. 바꿀 때는 `12. 13`, `12월 13일`을 함께 찾아 고칩니다.
+- /my-quoc, /review, /rider-survey 같은 주소는 `404.html`이 이 페이지로 보냅니다.
+
 ## 링크
 - 헤더 SHOP, 각 모델의 "루비워크샵에서 보기" 버튼: `https://rubiworkshop.com/quoc`
 - 거래처 문의: 루비서플라이 02-516-8465, 카카오톡 채널 `https://pf.kakao.com/_NFnBj/chat`
